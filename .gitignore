@@ -1,0 +1,11 @@
+# Ignore Windows system files
+
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Ignore Python cache if you built a Python project
+
+__pycache__/
+*.pyc
