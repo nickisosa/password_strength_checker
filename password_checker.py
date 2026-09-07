@@ -64,9 +64,6 @@ else:
     print("Special Case Not Included")
 
 #Strength Checker - Weak, Medium, or Strong
-Weak = create_password < 8
-Medium = create_password >= 8
-Strong = create_password >= 16
 
 if len(create_password) >= min_length and uppercase_check and lowercase_check and numbercase_check and search_char:
     strength = "Strong"
