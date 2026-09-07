@@ -74,4 +74,5 @@ elif len(create_password) >= min_length and character_score == 3:
 else:
     strength = "Weak"
 print(character_score)
+print(strength)
     
