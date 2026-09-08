@@ -1,58 +1,87 @@
 #This project was created to check the strength of a password
 import re
-
+print("+--------------------------------------+")
+print("|       PASSWORD STRENGTH CHECKER      |")
+print("+--------------------------------------+")
 #General Variables
-user_password = input("Create a new password: ")
+create_password = input("Create a new password: ")
+print("_" * 65)
 min_length = 8
-max_strength = 20
 passed = True
 failed = False
 special_characters = r"[!@#$%&_\-*+]"
 
+
+
 #Length Checker
-if len(user_password) >= min_length:
+if len(create_password) >= min_length:
+# Temporary result variables used to verify each length check during testing
     length_check = passed
-    print("Length Check Satisfied")
+    print("-Minimum length requirement met.")
 else:
     length_check = failed
-    print("Length Check Not Satisfied")
-
+    print("-Minimum length requirement not met.")
+    print("Suggestion: Use a password with atleast 8 characters.")
+print("*" * 65)
 #Uppercase Condition
-uppercase_check = re.search(r"[A-Z]", user_password)
+upcase_result = re.search(r"[A-Z]", create_password)
 
-if uppercase_check:
+if upcase_result:
+    # Temporary result variables used to verify each Upper check during testing
     upcase_result = passed
-    print("Atleast one Character is Uppercase!")
+    print("-Uppercase character detected.")
 else:
     upcase_result = failed
-    print("No Characters Are Uppercase")
-
+    print("-No uppercase character detected.")
+    print("Suggestion: Add atleast one uppercase letter.")
+print("=" * 50)
 #Lowercase Condition
-lowercase_check = re.search(r"[a-z]", user_password)
+lowcase_result = re.search(r"[a-z]", create_password)
 
-if lowercase_check:
+if lowcase_result:
+    # Temporary result variables used to verify each Lowercase check during testing
     lowcase_result = passed
-    print("Atleast one character is Lowercase!")
+    print("-Lowercase character detected!")
 else:
     lowcase_result = failed
-    print("No Characters Are Lowercase")
-
+    print("-No lowercase character detected!")
+    print("Suggestion: Add atleast one lowercase letter.")
+print("=" * 50)
 #Numbercase Condition
-numbercase_check = re.search(r"[0-9]", user_password)
+numcase_result = re.search(r"[0-9]", create_password)
 
-if numbercase_check:
+if numcase_result:
+    # Temporary result variables used to verify each Numbercase check during testing
     numcase_result = passed
-    print("Atleast one character is a number!")
+    print("-Numeric character detected.!")
 else:
     numcase_result = failed
-    print("No Number Characters Included")
-
+    print("-No numeric characters detected.")
+    print("Suggestion: Add atleast one number.")
+print("=" * 50)
 #Special Characters Condition
-search_char = re.search(special_characters, user_password)
+special_result = re.search(special_characters, create_password)
 
-if search_char:
+if special_result:
+    # Temporary result variables used to verify special character check during testing
     special_result = passed
-    print("Atleast one special character included")
+    print("-Approved special character detected.")
 else:
     special_result = failed
-    print("Special Case Not Included")
+    print("-No approved special character detected.")
+    print("Suggestion: Add atleast one approved special character(s).")
+print("*" * 65)
+
+#Strength Checker - Weak, Medium, or Strong
+
+character_score = sum([upcase_result, lowcase_result, numcase_result, special_result])
+
+if len(create_password) >= min_length and character_score == 4:
+    strength = "Strong"
+elif len(create_password) >= min_length and character_score == 3:
+    strength = "Medium"
+else:
+    strength = "Weak"
+print("Character Requirement Met:", character_score, "out of 4")
+print("Password Strength:", strength)
+    
