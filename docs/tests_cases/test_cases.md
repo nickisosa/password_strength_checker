@@ -1,8 +1,8 @@
 ## List of test cases:
 | Test ID   | Label                  | Test Purpose                                                     | Expected Result                                                    |
 | --------- | ---------------------- | ---------------------------------------------------------------- | ------------------------------------------------------------------ |
-| **TC-01** | `[LENGTH]`             | Password is exactly 8 characters                                 | Length check passes                                                |
-| **TC-02** | `[LENGTH]`             | Password is fewer than 8 characters                              | Length check fails                                                 |
+|✅  **TC-01** | `[LENGTH]`             | Password is exactly 8 characters                                 | Length check passes                                                |
+|✅  **TC-02** | `[LENGTH]`             | Password is fewer than 8 characters                              | Length check fails                                                 |
 | **TC-03** | `[UPPERCASE]`          | Password contains at least one uppercase letter                  | Uppercase check passes                                             |
 | **TC-04** | `[UPPERCASE]`          | Password contains no uppercase letters                           | Uppercase check fails                                              |
 | **TC-05** | `[LOWERCASE]`          | Password contains at least one lowercase letter                  | Lowercase check passes                                             |
@@ -20,8 +20,8 @@
 | **TC-17** | `[SCORING] [MEDIUM]`   | Valid length + 3/4, missing uppercase                            | Character score = 3; Strength = Medium                             |
 | **TC-18** | `[SCORING] [MEDIUM]`   | Valid length + 3/4, missing lowercase                            | Character score = 3; Strength = Medium                             |
 | **TC-19** | `[SCORING] [WEAK]`     | Valid length + only 2/4 character categories                     | Character score = 2; Strength = Weak                               |
-| **TC-20** | `[SCORING] [WEAK]`     | Valid length + only 1/4 character categories                     | Character score = 1; Strength = Weak                               |
+|✅  **TC-20** | `[SCORING] [WEAK]`     | Valid length + only 1/4 character categories                     | Character score = 1; Strength = Weak                               |
 | **TC-21** | `[EDGE CASE] [LENGTH]` | Under 8 characters but contains all 4 character categories       | Strength = Weak                                                    |
-| **TC-22** | `[EDGE CASE]`          | Empty password input                                             | Strength = Weak; program should not crash                          |
+|✅  **TC-22** | `[EDGE CASE]`         | Empty password input                                             | Strength = Weak; program should not crash                           |
 | **TC-23** | `[EDGE CASE]`          | Password contains spaces                                         | Record actual behavior and decide whether this matches your policy |
 | **TC-24** | `[EDGE CASE]`          | Very long password containing all requirements                   | Program should still process it correctly                          |
