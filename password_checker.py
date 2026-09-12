@@ -5,23 +5,22 @@ print("|       PASSWORD STRENGTH CHECKER      |")
 print("+--------------------------------------+")
 #General Variables
 min_length = 8
-approved_characters = r"[!@#$%&_\-*+]" 
+special_character_pattern = r"[!@#$%&_\-*+]" 
 
-create_password = input("Create a new password: ")
-print("*" * 65) 
+password = input("Create a new password: ")
+print("-" * 50) 
 
 #Length Checker
-length_check = len(create_password) >= min_length
+length_check = len(password) >= min_length
 
 if length_check:
     print("Minimum length requirement met.")
 else:
     print("Minimum length requirement not met.")
     print("Suggestion: Use a password with at least 8 characters.")
-print("-" * 65)
 
 #Uppercase Condition
-upcase_search = re.search(r"[A-Z]", create_password)
+upcase_search = re.search(r"[A-Z]", password)
 has_uppercase = bool(upcase_search) 
 
 if has_uppercase:
@@ -29,46 +28,42 @@ if has_uppercase:
 else:
     print("No uppercase character detected.")
     print("Suggestion: Add at least one uppercase letter.")
-print("-" * 50)
 
 #Lowercase Condition
-lowcase_search = re.search(r"[a-z]", create_password) 
-has_lowcase = bool(lowcase_search) 
+lowercase_search = re.search(r"[a-z]", password) 
+has_lowercase = bool(lowercase_search) 
 
-if has_lowcase:
-    print("Lowercase character detected!")
+if has_lowercase:
+    print("Lowercase character detected.")
 else:
-    print("No lowercase character detected!")
+    print("No lowercase character detected.")
     print("Suggestion: Add at least one lowercase letter.")
-print("-" * 50)
 
-#Numbercase Condition
-numcase_search = re.search(r"[0-9]", create_password)
-has_numbers = bool(numcase_search)
+#Numeric Character Condition
+number_search = re.search(r"[0-9]", password)
+has_number = bool(number_search)
 
 
-if has_numbers:
-    print("Numeric character detected.!")
+if has_number:
+    print("Numeric character detected.")
 else:
     print("No numeric characters detected.")
     print("Suggestion: Add at least one number.")
-print("-" * 50)
 
 #Special Characters Condition
-special_char_search = re.search(approved_characters, create_password)
-has_special_char = bool(special_char_search)
+special_character_search = re.search(special_character_pattern, password)
+has_special_char = bool(special_character_search)
 
 
 if has_special_char:
     print("Approved special character detected.")
 else:
-    #print(failed)
     print("No approved special character detected.")
-    print("Suggestion: Add at least one approved special character(s).")
-print("-" * 65)
+    print("Suggestion: Add at least one approved special character.")
 
+print("-" * 50)
 #Strength Checker - Weak, Medium, or Strong
-character_score = sum([has_uppercase, has_lowcase, has_numbers, has_special_char])
+character_score = sum([has_uppercase, has_lowercase, has_number, has_special_char])
 
 if length_check and character_score == 4:
     strength = "Strong"
@@ -76,6 +71,6 @@ elif length_check and character_score == 3:
     strength = "Medium"
 else:
     strength = "Weak"
-print("Character Requirement Met:", character_score, "out of 4")
+print("Character Requirements Met:", character_score, "out of 4")
 print("Password Strength:", strength)
-    
+print("-" * 50)
