@@ -18,17 +18,18 @@ The uppercase requirement should fail because the password does not contain any 
 The program correctly detected that no uppercase character was included. The uppercase requirement failed as expected, and the program displayed the appropriate suggestion.
 
 **Status:**
-PASS
+`PASS`
 
 **Refactored:**
-YES
+`YES`
 
 **Retested:**
-YES / NO
+`YES`
 
 **Evidence:**
-`screenshots/phase_2/TC-04_Uppercase_Fail_Initial.png`
-`Screenshots/phase_4/???`
+`test_cases/Initial Test Cases/TC-04_Uppercase_Fail_Initial.png`
+`test_cases/Initial Test Cases/Retest Cases`
 
 **Notes:**
+`Retested TC-04 and uppercase detected failed = passed.`
 

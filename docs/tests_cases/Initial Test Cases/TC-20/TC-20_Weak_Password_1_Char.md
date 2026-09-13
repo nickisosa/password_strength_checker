@@ -3,9 +3,11 @@
 **Labels:** `[SCORING]` `[WEAK]` `[SUGGESTIONS]`
 
 **Purpose:**
+
 Verify that the program correctly classifies a password as Weak when only one of the four character requirements is met and that improvement suggestions are provided for each failed requirement.
 
 **Test Input:**
+
 Password: `yetr`
 
 **Preconditions:**
@@ -30,32 +32,41 @@ The program checks for:
 * The program should display suggestions for the failed length, uppercase, number, and special-character requirements.
 
 **Actual Result:**
+
 The program correctly identified that the password did not meet the minimum length requirement and did not contain uppercase letters, numbers, or approved special characters. The lowercase requirement passed successfully. The character score was calculated as `1`, and the final password strength was classified as `Weak`. The program also displayed a separate improvement suggestion for each failed requirement.
 
 **Status:**
+
 `PASS`
 
 **Refactored:**
-`NOT YET`
+
+`YES`
 
 **Retested:**
-`NOT YET`
+
+`YES`
 
 **Retest Result:**
-`[Fill in after retesting]`
+
+`PASS`
 
 **Initial Evidence:**
-`test_cases/screenshots/TC-20_Weak_Password_1_Char.png`
+
+`test_cases_Initial Test Cases/TC-20_Weak_Password_1_Char.png`
 
 **Retest Evidence:**
-`[Add retest screenshot path later]`
+
+`test_cases/Retest cases`
 
 **Notes:**
+
 This test confirmed that the program can handle multiple failed password requirements at the same time. It correctly recognized that lowercase was the only character requirement met while identifying the missing uppercase, number, and special-character requirements. The program also provided multiple improvement suggestions instead of stopping after the first failed check.
 
 **Refactoring Notes:**
-`[Document any code changes that affected this test later]`
+
+The validation and scoring logic were cleaned up by storing each character check as a Boolean result and using those Boolean values directly in `character_score`. This made the logic easier to follow while keeping the individual suggestions for failed requirements.
 
 **Retesting Notes:**
-`[Document whether the result stayed the same after refactoring]`
 
+The test was repeated after refactoring. The password still failed the minimum length, uppercase, numeric, and approved special-character requirements while passing the lowercase check. The character score remained `1 out of 4`, the password was correctly classified as `Weak`, and all expected improvement suggestions were displayed. The retest passed.

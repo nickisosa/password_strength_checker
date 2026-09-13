@@ -21,25 +21,25 @@ The program correctly detected that no numeric characters were included. The num
 PASS
 
 **Refactored:**
-`[YES / NO / NOT YET]`
+`YES`
 
 **Retested:**
-`[YES / NO / NOT YET]`
+`YES`
 
 **Retest Result:**
-`[Fill in after retesting]`
+`PASS`
 
 **Initial Evidence:**
-`screenshots/phase_2/TC-08_Number_Fail_Initial.png`
+`test_cases/Initial Test Cases/TC-08_Number_Fail_Initial.png`
 
 **Retest Evidence:**
-`[Add retest screenshot path later]`
+`test_cases/Initial Test Cases/Retest Cases`
 
 **Notes:**
 This test confirmed that the number validation correctly identifies when a submitted password does not contain a numeric character.
 
 **Refactoring Notes:**
-`[Document any code changes that affected this test later]`
+`Removed unecessary comments`
 
 **Retesting Notes:**
-`[Document whether the result stayed the same after refactoring]`
+`TC-08 meric character not dtetcted = pass`

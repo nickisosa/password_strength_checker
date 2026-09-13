@@ -1,4 +1,4 @@
-## TC-05 — lowcase_pass
+## TC-05 — lowercase_pass
 
 **Labels:** `[LOWERCASE]`
 
@@ -18,28 +18,26 @@ The lowercase requirement should pass because the password contains at least one
 The program correctly detected the lowercase character and confirmed that the lowercase requirement was met.
 
 **Status:**
-PASS
+`PASS`
 
 **Refactored:**
-`[YES / NO / NOT YET]`
+`YES`
 
 **Retested:**
-`[YES / NO / NOT YET]`
+`YES`
 
 **Retest Result:**
-`[Fill in after retesting]`
+`PASS`
 
 **Initial Evidence:**
-`screenshots/phase_2/TC-05_Lowercase_Pass_Initial.png`
-
-**Retest Evidence:**
-`[Add retest screenshot path later]`
+`test_cases/Initial Test Cases/TC-05_Lowercase_Pass_Initial.png`
+`test_cases/Initial Test Cases/Retest Cases`
 
 **Notes:**
 This test confirmed that the lowercase validation correctly recognizes lowercase letters in the submitted password.
 
 **Refactoring Notes:**
-`[Document any code changes that affected this test later]`
+`When refactoring, I removed unneccary code and clutter`
 
 **Retesting Notes:**
-`[Document whether the result stayed the same after refactoring]`
+`Retesting TC-05 passed and lowercase detection recognized.`

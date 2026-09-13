@@ -21,25 +21,25 @@ The program correctly detected the lowercase character and confirmed that the lo
 PASS
 
 **Refactored:**
-`NOT YET`
+`YES`
 
 **Retested:**
-`NOT YET`
+`YES`
 
 **Retest Result:**
-`[Fill in after retesting]`
+`PASS`
 
 **Initial Evidence:**
-`screenshots/phase_2/TC-05_lowercase_fail_initial.png`
+`test_cases/Initial Test Cases/TC-05_lowercase_fail_initial.png`
 
 **Retest Evidence:**
-`[Add retest screenshot path later]`
+`test_cases/Initial Test Cases/Retest Cases`
 
 **Notes:**
 This test confirmed that the lowercase validation correctly recognizes lowercase letters in the submitted password.
 
 **Refactoring Notes:**
-`[Document any code changes that affected this test later]`
+`Removed unnessary code`
 
 **Retesting Notes:**
-`[Document whether the result stayed the same after refactoring]`
+`PASS`

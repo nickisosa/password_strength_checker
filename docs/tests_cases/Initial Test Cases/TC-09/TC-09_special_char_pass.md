@@ -23,25 +23,25 @@ The program correctly detected the approved special character and confirmed that
 PASS
 
 **Refactored:**
-`NOT YET`
+`YES`
 
 **Retested:**
-`NOT YET`
+`YES`
 
 **Retest Result:**
-`[Fill in after retesting]`
+`PASS`
 
 **Initial Evidence:**
-`screenshots/phase_2/TC-09_special_char_pass_initial.png`
+`test_cases/Initial Test Cases/TC-09_special_char_pass_initial.png`
 
 **Retest Evidence:**
-`[Add retest screenshot path later]`
+`test_cases/Initial Test Cases/Restest Cases`
 
 **Notes:**
 This test confirmed that the regex validation correctly recognizes approved special characters in the submitted password.
 
 **Refactoring Notes:**
-`[Document any code changes that affected this test later]`
+
 
 **Retesting Notes:**
-`[Document whether the result stayed the same after refactoring]`
+`TC-09 Passed, special characters detected`

@@ -18,20 +18,19 @@ Below minimum length check passes.
 The code exited = 1 - Password Requirements Failed. The results were as expected!
 
 **Status:**  
-FAILS
+`PASS`
 
 **Refactored:** 
-YES
+`YES`
 
 **Retested:** 
-YES/NO
+`YES`
 
-Notes:
+`Notes: Retested TC-02 and below minimum legnth test passed.`
 
 **Evidence:**  
-`screenshots/phase_2/TC-02_Checking Upper Case_Below Minimum.png` #intital screenshot
-`screenshots/phase_2/???` #Retesting screenshot
+`test_cases/Initial Test Cases/TC-02_Checking Upper Case_Below Minimum.png` #intital screenshot
+`test_cases/Initial Test Cases/Retest Cases` #Retesting screenshot
 
 
 **Notes:**  
-[Anything unusual you noticed]

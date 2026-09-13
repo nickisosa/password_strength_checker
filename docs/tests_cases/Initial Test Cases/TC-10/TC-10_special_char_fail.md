@@ -23,25 +23,25 @@ The program correctly detected that no approved special characters were included
 PASS
 
 **Refactored:**
-`NOT YET`
+`YES`
 
 **Retested:**
-`NOT YET`
+`YES`
 
 **Retest Result:**
-`[Fill in after retesting]`
+`PASS`
 
 **Initial Evidence:**
-`screenshots/phase_2/TC-10_special_char_fail_initial.png`
+`test_cases/Initial Test Cases/TC-10_special_char_fail_initial.png`
 
 **Retest Evidence:**
-`[Add retest screenshot path later]`
+`test_cases/Initial Test Cases/Restest Cases`
 
 **Notes:**
-This test confirmed that the regex validation correctly identifies when a submitted password does not contain an approved special character.
+`This test confirmed that the regex validation correctly identifies when a submitted password does not contain an approved special character.`
 
 **Refactoring Notes:**
 `[Document any code changes that affected this test later]`
 
 **Retesting Notes:**
-`[Document whether the result stayed the same after refactoring]`
+`TC-10 Special characters expected to fail pass`

@@ -18,19 +18,19 @@ Length check passes.
 The code exited = 0 and I knew the input function was working.
 
 **Status:**  
-PASS
+`PASS`
 
 **Refactored:** 
-YES
+`YES`
 
 **Retested:** 
-YES/NO
+`YES`
 
-Notes: I am currently in the retesting process to make sure everything is properly coded.
+`Notes: I am currently in the retesting process to make sure everything is properly coded.`
 
 **Evidence:**  
-`screenshots/phase_2/TC-01_exact_minimum_length` #initial screentshot
-`screenshots/phase_2/???` #Retesting screenshot
+`test_cases/Initial Test Cases/TC-01_exact_minimum_length` #initial screentshot
+`test_cases/Initial Test Cases/Retest Cases` #Retesting screenshot
 
 **Notes:**  
-[Anything unusual you noticed]
+`Retested TC-01, minimum length passed.`
